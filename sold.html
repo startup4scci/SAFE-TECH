@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>Products</title>
+<link rel="shortcut icon" href="logocrop_HEE_icon.ico" style="border-radius: 1px;"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="homestyle.css" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+    
+    <!--nav bar-->
+  <nav class="navbar navbar-light" style="background-color: black" >
+   <a class="navbar-brand" href="home.html">
+     <img src="logocrop.png" width="45px" height="40px;" style="border-radius: 3px; margin-top: 2px;" class="d-inline-block align-top" alt="">
+    <span style="color:white; font-size: 30px; font-family: sans-serif; font-weight: bold; margin-left: 3px;" >Safe-Tech</span>
+        </a>
+      <ul class="nav justify-content-end">
+  <li class="nav-item">
+     <button class="button" style="vertical-align:middle;" onclick="window.location.href='sold.html'"><span>Product</span></button>
+  </li>
+  <li class="nav-item">
+ <button class="button" style="vertical-align:middle" onclick="window.location.href='Feedback/Feedback.html'"><span>Feedback</span></button>
+  </li>
+        <!--login form button-->
+  <li class="nav-item">
+     <button class="button" onclick="openForm()" style="vertical-align:middle">Login</button>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="text-align: center; color: black;">Login</h1>
+    <label for="email" style="color: black;"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw" style="color: black"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+     <input type="checkbox" name="save" value="save"><lable style="color:black; margin-left: 5px;" >Remember Me</lable><br><br>
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+      
+  </li>
+        <!--end login form button-->
+        
+  <li class="nav-item">
+    <button class="button" style="vertical-align:middle" onclick="window.location.href='signup.html'"><span>Sign up</span></button>
+  </li>
+  <li class="nav-item">
+    <button class="button" style="vertical-align:middle" onclick="window.location.href='aboutus.html'"><span>About us</span></button>
+  </li>
+</ul></nav>
+    <br>
+    
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style=" width:300px;" id="mySidebar" ><br>
+ 
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Products</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Best sold</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT US</a>
+  </div>
+  <div class="w3-panel w3-large">
+   <a  href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+   <a  href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity" style="margin-left: 3px;"></i></a>
+   <a  href="https://www.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity" style="margin-left: 3px;"></i></a>
+   <a  href="https://www.pinterest.com/"><i class="fa fa-pinterest-p w3-hover-opacity" style="margin-left: 3px;"></i></a>
+   <a  href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity" style="margin-left: 3px;"></i></a>
+   <a  href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity" style="margin-left: 3px;"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="3.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Products</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="1.jpg" alt="Norway" style="width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 1</b></p>
+        <p>Features : Passcode - Camera - Secret pocket - Fingerprint - Face recognition - Automatic destruction</p>
+        <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">10000 L.E</label>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="6.jpg" alt="Norway" style=" width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 2</b></p>
+        <p>Features : Passcode - Camera - Secret pocket - Fingerprint - Face recognition - Automatic destruction</p>
+         <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">10000 L.E</label>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="prod3.jpg" alt="Norway" style=" width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 3</b></p>
+        <p>Features : Passcode - Camera - Secret pocket - Fingerprint</p><br>
+        <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">5000 L.E</label>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="4.jpg" alt="Norway" style=" width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 4</b></p>
+        <p>Features : Passcode - Camera</p><br><br>
+        <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">4000 L.E</label>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="5.jpg"alt="Norway" style=" width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 5</b></p>
+        <p>Features : Passcode - Camera - Secret pocket</p><br><br>
+        <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">4500 L.E</label>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="2.jpg" alt="Norway" style=" width:100%; height: 200px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p style="text-align: center; margin-top: 3px;"><b>Product 6</b></p>
+        <p>Features : Passcode - Camera - Secret pocket - Fingerprint - Face recognition</p><br>
+        <button class="button" style="vertical-align:middle; margin-bottom: 10px;" onclick="window.location.href='sold.html'"><span>Buy </span></button><label style="float: right; font-size: 20px; margin-top: 10px;">6000 L.E</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      
+    </div>
+    <div class="w3-col m6">
+     
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Best sold</b></h4>
+    <p>This is the list of the best sold products from our products, and this rating depends on the personal need of the features for each customer, so we are trying to give you recommendation for the most used safe among all our safes.</p>
+    <hr>
+    
+
+    <!-- Progress bars / Skills -->
+    <p>product 3</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>product 4</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>product 1</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    
+    <hr>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact US</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>SAFE-TECH@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>CAIRO, EG</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>000-0000-00</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+   
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by SAFE-TECH</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+ <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+        
+        
+</script>
+<script src="jquery-slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
